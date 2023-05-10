@@ -1,2 +1,1 @@
 # Financial TicStack project
-Fifa
