@@ -8,11 +8,14 @@ for (let i = 0; i < 1; i++) {
     const birthDate = faker.date.past(40, '2003-01-01').toISOString().split('T')[0];
     const createDate = faker.date.between('2015-01-01', '2023-05-11').toISOString().split('T')[0];
     const occupation = faker.name.jobTitle();
+    
+    // Create the insert statement
   
     const insertStatement = `INSERT INTO "user" (user_name, user_first_name, gender, birth_date, create_date, occupation) VALUES ('${userName}', '${firstName}', '${gender}', '${birthDate}', '${createDate}', '${occupation}');`;
-  
     console.log(insertStatement);
-  }
+    console.log("");  
+}
+
   
   // for group 
 for (let i = 0; i < 1; i++) {
