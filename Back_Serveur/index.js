@@ -8,7 +8,7 @@ const pool = new Pool({
     user: "postgres",
     host: "localhost",
     database: "finance",
-    password: "" ,//Your password postgresql
+    password: "mampionona" ,//Your password postgresql
     port: 5432 // default port on postgresql
   });
   console.log("Connexion réussie à la base de données");
@@ -20,5 +20,5 @@ app.listen(3000, () => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Bonjour le monde...");
+  res.send("Bonjour tout le monde...");
 });
